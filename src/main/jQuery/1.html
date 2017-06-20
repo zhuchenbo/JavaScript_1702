@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        p {
+            background: #f99;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                $('p').fadeToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="height: 80px;">
+    <p>p...</p>
+</div>
+<button>click</button>
+</body>
+</html>

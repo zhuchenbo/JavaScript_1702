@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+//            $('body').delegate('p', 'click', function () {
+//                $(this).hide();
+//            });
+           $(document).on('click', 'p', function () {
+               $(this).hide();
+           });
+            $('button').click(function () {
+                $('<p> new p</p>').insertAfter('button');
+            })
+        });
+    </script>
+</head>
+<body>
+<button>add p</button>
+</body>
+</html>
